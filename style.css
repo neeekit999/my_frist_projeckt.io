@@ -1,0 +1,87 @@
+
+/* Оформление всей страницы */
+body {
+    background-color: #f0f4f8; /* Цвет фона */
+    color: #222222; /* Цвет обычного текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 20px; /* Добавляем внутренние отступы */
+}
+
+/* Главные заголовки */
+h1 {
+    color: #123456; /* Цвет заголовка */
+    text-align: center; /* Выравнивание по центру */
+}
+
+/* Заголовки второго уровня */
+h2 {
+    color: #176b87; /* Цвет заголовка */
+}
+
+/* Заголовки третьего уровня */
+h3 {
+    color: #2589a6; /* Цвет заголовка */
+}
+
+/* Меню навигации */
+nav {
+    background-color: #123456; /* Цвет фона меню */
+    padding: 15px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание ссылок */
+}
+
+/* Ссылки внутри меню */
+nav a {
+    color: white; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчёркивание */
+    margin: 15px; /* Расстояние между ссылками */
+}
+
+/* Изменение ссылки при наведении мыши */
+nav a:hover {
+    color: #66d9ef; /* Новый цвет при наведении */
+}
+/* Анимация появления заголовков */
+h1, h2, h3 {
+    animation: appearance 1.5s ease;
+}
+
+/* Описание анимации */
+@keyframes appearance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Расположение текста и изображения */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Размер изображения */
+.content img {
+    width: 300px;
+}
+body.threats {
+    background-image: url("../images/photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+img {
+    border: 3px solid #123456;
+    border-radius: 10px;
+}
+
+/* Рамка и скругление меню */
+nav {
+    border-radius: 10px;
+}
